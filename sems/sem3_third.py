@@ -1,25 +1,7 @@
-list_int = [1,2,3,4,5,4,5,6,7,5,6,7,8,9,10,9,10]
+nums = [1, 1, 2, 2, 2, 3, 4, 5, 8, 9, 9, 10, 10, 10, 10]
+nums_origin = []
 
-
-
-
-
-
-
-"""print(list_int)
-print(list_origin:= list(set(list_int)))
-list_string = ['1','2','3','1','2']
-def original(lst):
-    ret = []
-    for i in lst:
-        if i not in ret:
-            ret.append(i)
-    return ret
-print(list_string)
-print(original(list_string))
-print(original(list_int))
-list_rand = [1,2,3,1,2,3,'1','2','3','1','2']
-print(original(list_rand))
-print(type(original(list_string)))
-
-"""
+for item in nums:
+    if nums.count(item) % 2 == 1:
+        nums_origin.append(item)
+print(nums_origin)
